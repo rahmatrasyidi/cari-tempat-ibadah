@@ -1,0 +1,169 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        tools:context=".MapsActivity"
+        android:layout_marginTop="90dp"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:gravity="center"
+            android:background="@android:color/holo_red_dark">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Ayo Beribadah!"
+                android:layout_marginLeft="16dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_alignParentLeft="true"/>
+
+
+            <ImageView
+                android:id="@+id/ivHistory"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/history"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="16dp"/>
+
+            <ImageView
+                android:id="@+id/ivEvent"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/event"
+                android:layout_toLeftOf="@id/ivHistory"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@android:color/holo_red_dark">
+
+            <LinearLayout
+                android:id="@+id/ivMasjid"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/masjid"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Masjid"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginLeft="4dp"
+                    android:textColor="@android:color/white"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ivGereja"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/gereja"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Gereja"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginLeft="4dp"
+                    android:textColor="@android:color/white"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ivCandi"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/temple"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Pura"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginLeft="4dp"
+                    android:textColor="@android:color/white"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            android:background="@android:color/white">
+
+            <EditText
+                android:id="@+id/etCari"
+                android:layout_width="220dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btnCari"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:background="@android:color/holo_red_light"
+                android:textColor="@android:color/white"
+                android:text="Cari"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
